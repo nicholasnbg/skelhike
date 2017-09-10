@@ -35,18 +35,43 @@
         <div class="two columns">
           <a href="#"><img id="logo" src="http://via.placeholder.com/350x150" alt=""></a>
         </div>
-        <div class="ten columns">
-          <!--NAV GOES HERE -->
+        <div class="navbar ten columns">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Trecks</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span class="open-slide">
+            <a href="#" onclick="openSideNav()">
+              <svg width="30" height="30">
+                <path d="M0, 5 30 ,5" stroke="#000" stroke-width="5"/>
+                <path d="M0, 14 30 ,14" stroke="#000" stroke-width="5"/>
+                <path d="M0, 23 30 ,23" stroke="#000" stroke-width="5"/>
+              </svg>
+            </a>
+          </span>
+
         </div>
       </div> <!--row-->
     </div><!-- Container -->
   </header>
 
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSideNav()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Trecks</a>
+    <a href="#">Contact</a>
+
+  </div>
+
+
   <div class="hero">
     <div class="container">
       <div class="row">
         <div class="one-third column">
-          <h1>Explore Your Wonderlust</h1>
+          <h1>Explore Your Wanderlust</h1>
         </div>
       </div><!--row-->
     </div> <!-- container -->
@@ -93,5 +118,15 @@
     </div><!-- Container -->
   </div><!-- Where -->
 
+
+<script>
+  function openSideNav(){
+    document.getElementById('side-menu').style.width= '250px';
+  }
+
+  function closeSideNav(){
+    document.getElementById('side-menu').style.width= '0';
+  }
+</script>
 </body>
 </html>

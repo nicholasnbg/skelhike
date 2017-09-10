@@ -1,9 +1,47 @@
 header {
   height: 10vh;
+  background-color: #f2f2f2;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
 }
 
 header a {
   height: auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 10vh;
+}
+
+.navbar ul {
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 0;
+  height: 100%;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-bottom: 0;
+  padding: 0 20px;
+}
+
+.navbar ul li:hover{
+  background: #ccc;
+}
+
+
+.navbar ul li a {
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 .center-row {
@@ -14,6 +52,31 @@ header a {
   height: 10vh;
 }
 
+.side-nav{
+  height: 100%;
+  background: #111;
+  opacity: 0.9;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s ease-in-out;
+}
+
+.side-nav a{
+  padding: 10px 10px 10px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  display: block;
+  transition: 0.3s;
+}
+
+.side-nav a.btn-close {
+  font-size: 3em;
+}
 
 .hero {
   height: 90vh;
@@ -60,4 +123,15 @@ header a {
 
 .where-image img {
   margin-bottom: 10px;
+}
+
+
+/** MEDIA QUERIES **/
+@media screen and (max-width: 750px){
+  .navbar>ul {display:none};
+}
+@media screen and (min-width: 750px){
+  .open-slide{
+    display: none;
+  }
 }
