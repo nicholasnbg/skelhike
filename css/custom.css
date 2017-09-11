@@ -86,10 +86,10 @@ header a {
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
-  -webkit-transition: .25s ease-in-out;
-  -moz-transition: .25s ease-in-out;
-  -o-transition: .25s ease-in-out;
-  transition: .25s ease-in-out;
+  -webkit-transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .leftSpans span:nth-child(1), .rightSpans span:nth-child(1){
@@ -108,23 +108,23 @@ header a {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -o-transform: rotate(45deg);
-  transform: rotate(45deg)!important;
+  transform: rotate(45deg);
 }
 
 .menuToggle.open .leftSpans span:nth-child(3),.menuToggle.open .rightSpans span:nth-child(1) {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
-  transform: rotate(-45deg) !important;
+  transform: rotate(-45deg);
 }
 
 .menuToggle.open .leftSpans span:nth-child(2) {
-  left: -50%;
+
   opacity: 0;
 }
 
 .menuToggle.open .rightSpans span:nth-child(2) {
-  left: 100%;
+
   opacity: 0;
 }
 
@@ -151,7 +151,7 @@ header a {
   top: 66%;
 }
 
-
+/* SIDE NAV */
 
 
 .side-nav{
@@ -164,7 +164,7 @@ header a {
   top: 0;
   right: 0;
   overflow-x: hidden;
-  padding-top: 80px;
+  padding-top: 12vh;
   transition: 0.5s ease-in-out;
 }
 
@@ -179,6 +179,9 @@ header a {
 .side-nav a.btn-close {
   font-size: 3em;
 }
+
+
+/*HERO*/
 
 .hero {
   height: 90vh;
@@ -238,7 +241,7 @@ header a {
   .navbar>ul {display:none};
 }
 @media screen and (min-width: 750px){
-  #open-slide{
+  .menuToggle{
     display: none;
   }
 }
