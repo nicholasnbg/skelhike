@@ -3,8 +3,8 @@ $(document).ready(function(){
   var sideOpen = false;
 
 
-  $('#open-slide').click(function(){
-    $(this).toggleClass('open');
+  $('.menuToggle').click(function(){
+    $('.menuToggle').toggleClass('open');
     toggleSideNav();
   });
 
