@@ -1,4 +1,14 @@
 
+/*=========GLOBAL STYLING ========*/
+p {
+  line-height: 50px;
+  font-size: 1.2em;
+}
+
+h1 {
+  font-weight: bold;
+}
+
 /* HEADER AND NAV */
 header {
   height: 10vh;
@@ -53,6 +63,7 @@ header a {
 
 #logo-img {
   height: 10vh;
+  transform: scale(1.25);
 }
 
 /*SIDE MENU TOGGLE */
@@ -196,7 +207,7 @@ header a {
 
 /*=============ABOUT US SECTION ========*/
 .about-us {
-  background-color: rgba(50,50,50,0.3);
+  background-color:#f2f2f2;
 }
 
 .about-us .row {
@@ -208,20 +219,47 @@ header a {
   text-align: center;
 }
 
+.social {
+  width: 100%;
+  text-align: center;
+}
+
+.social a.button {
+  width: 130px;
+  margin: 10px;
+}
+
 
 /*============WHERE SECTION==================*/
 .where {
   padding-top: 100px;
-  background: url('../images/where.jpg') no-repeat center center;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
-  background-size: cover;
-  background-attachment: fixed;
-    color: white;
+  background: #f2f2f2;
 }
 
+.where .reverse-row {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.where .reverse-row>div {
+  margin-left: 0;
+}
 
 .where h1 {
   margin-bottom: 40px;
+}
+
+.where img {
+  width: 100%;
+}
+
+.where .row {
+  margin-bottom: 30px;
+}
+
+.where h3 {
+  font-weight: bold;
 }
 
 .where-image {
@@ -231,8 +269,17 @@ header a {
   text-align: center;
 }
 
-.where-image img {
-  margin-bottom: 10px;
+
+
+
+/*==========NEWSLETTER=========*/
+.newsletter {
+  padding-top: 100px;
+  background: url('../images/where.jpg') no-repeat center center;
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+  background-size: cover;
+  background-attachment: fixed;
+    color: white;
 }
 
 
@@ -243,5 +290,13 @@ header a {
 @media screen and (min-width: 750px){
   .menuToggle{
     display: none;
+  }
+}
+@media screen and (max-width: 550px){
+  .where .reverse-row{
+    flex-direction: column;
+  }
+  .where p{
+    line-height: 1em;
   }
 }
